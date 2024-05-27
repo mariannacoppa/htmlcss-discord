@@ -15,7 +15,7 @@ body {
     flex-wrap: wrap;
 }
 .row:not(.sm, .big, .h) {
-    width: 60%;
+    width: 70%;
 }
 .row:not(.f) {
     height: 100%;
@@ -76,11 +76,10 @@ a:not(li a) {
 /*layout singolo piccolo*/
 .container.sm {
     background-image: url(../img/jumbo.png);
-    
     height: 500px;
 }
 .col.sm {
-    width: 60%;
+    width: 70%;
     height: 50%;
     margin: auto;
     text-align: center;
@@ -102,13 +101,13 @@ p.sm {
 }
 /*layout a 2 colonne*/
 .container.two, .container.three {
-    height: 400px;
+    height: 600px;
 }
 .container.three, .container.big {
     background-color: rgb(209, 208, 208);
 }
 .col-70, .col-30 {
-    padding: 150px 0;
+    height: 500px;
     flex-direction: row;
     align-self: center;
     border: 2px dashed black;
@@ -118,9 +117,6 @@ p.sm {
 }
 .item1 {
     background-image: url(../img/item1.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .item2 {
     background-image: url(../img/item2.svg);
@@ -133,20 +129,24 @@ p.sm {
 }
 .col-30 {
     width: 30%;
-    background-color: pink;
 }
 #reverse {
     flex-direction: row-reverse;
+}
+.content-half {
+    padding: 20% 0;
+}
+h1.lateral {
+    margin-bottom: 20%;
 }
 /*layout singolo grande*/
 .row.big {
     width: 100%;
 }
 .col-big {
-    width: 60%;
+    width: 70%;
     height: 600px;
     margin: 50px auto;
-    background-color: green;
     border: 2px dashed black;
 }
 /*layout a 5 colonne e footer*/
@@ -158,7 +158,6 @@ p.sm {
 }
 .col-large {
     width: 34%;
-    background-color: salmon;
     border: 2px dashed black;
 }
 .col-sm {
