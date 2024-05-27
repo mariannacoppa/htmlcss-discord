@@ -68,13 +68,15 @@ a:not(li a) {
     border-radius: 40px;
     padding: 15px;
 }
-
-/*layout singolo piccolo*/
-.container.sm {
-    background-image: url(../img/jumbo.png);
+.container.sm, .item1, .item2, .item3, .item4-big {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+/*layout singolo piccolo*/
+.container.sm {
+    background-image: url(../img/jumbo.png);
+    
     height: 500px;
 }
 .col.sm {
@@ -105,18 +107,32 @@ p.sm {
 .container.three, .container.big {
     background-color: rgb(209, 208, 208);
 }
-.col-60, .col-40 {
+.col-70, .col-30 {
     padding: 150px 0;
     flex-direction: row;
     align-self: center;
     border: 2px dashed black;
 }
-.col-60 {
-    width: 60%;
-    background-color: rgb(74, 133, 242);
+.col-70 {
+    width: 70%;
 }
-.col-40 {
-    width: 40%;
+.item1 {
+    background-image: url(../img/item1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item2 {
+    background-image: url(../img/item2.svg);
+}
+.item3 {
+    background-image: url(../img/item3.svg);
+}
+.item4-big {
+    background-image: url(../img/item4-big.svg);
+}
+.col-30 {
+    width: 30%;
     background-color: pink;
 }
 #reverse {
