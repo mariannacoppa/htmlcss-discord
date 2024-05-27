@@ -63,11 +63,12 @@ li {
 .content.h.left, .content.h.right {
     padding: 0px 10px;
 }
-#login {
+a:not(li a) {
     background-color: white;
     border-radius: 40px;
     padding: 15px;
 }
+
 /*layout singolo piccolo*/
 .container.sm {
     background-image: url(../img/jumbo.png);
@@ -77,10 +78,25 @@ li {
     height: 500px;
 }
 .col.sm {
-    width: 45%;
+    width: 60%;
+    height: 50%;
     margin: auto;
-    background-color: violet;
-    border: 2px dashed black;
+    text-align: center;
+}
+#opbrow, h1.sm, p.sm {
+    color: white;
+}
+#opbrow {
+    background-color: black;
+}
+h1.sm {
+    margin: 30px auto;
+}
+p.end {
+    margin-bottom: 40px;
+}
+p.sm {
+    margin-top: 5px;
 }
 /*layout a 2 colonne*/
 .container.two, .container.three {
