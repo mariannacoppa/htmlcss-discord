@@ -110,7 +110,6 @@ p.sm {
     height: 500px;
     flex-direction: row;
     align-self: center;
-    border: 2px dashed black;
 }
 .col-70 {
     width: 70%;
