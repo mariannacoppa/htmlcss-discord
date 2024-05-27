@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row:not(.sm, .big) {
+    width: 60%;
+}
+.row:not(.f) {
+    height: 100%;
+    margin: auto;
+}
+/*intestazione*/
+header {
+    border-bottom: 4px solid lightblue;
+}
+.container.h {
+    height: 60px;
+    background-color: lightblue;
+}
+.col.h.left, .col.h.right {
+    width: 20%;
+}
+.col.h.medium {
+    width: 60%;
+    text-align: center;
+}
+.col.h.right {
+    text-align: right;
+}
+.col.h {
+    height: 40px;
+    background-color: rgb(250, 186, 69);
+    border: 2px dashed black;
+    align-self: center;
+}
+li {
+    list-style: none;
+    display: inline-block;
+    flex-direction: row;
+    text-align: center;
+}
+.content.h {
+    line-height: 38px;
+}
+.content.h.left, .content.h.right {
+    padding: 0px 10px;
+}
+/*layout singolo piccolo*/
+.container.sm {
+    background-color: rgb(1, 1, 155);
+}
+.col.sm {
+    width: 45%;
+    height: 200px;
+    margin: 50px auto;
+    background-color: violet;
+    border: 2px dashed black;
+}
+/*layout a 2 colonne*/
+.container.two, .container.three {
+    height: 400px;
+}
+.container.three, .container.big {
+    background-color: rgb(209, 208, 208);
+}
+.col-60, .col-40 {
+    padding: 150px 0;
+    flex-direction: row;
+    align-self: center;
+    border: 2px dashed black;
+}
+.col-60 {
+    width: 60%;
+    background-color: rgb(74, 133, 242);
+}
+.col-40 {
+    width: 40%;
+    background-color: pink;
+}
+#reverse {
+    flex-direction: row-reverse;
+}
+/*layout singolo grande*/
+.row.big {
+    width: 100%;
+}
+.col-big {
+    width: 60%;
+    height: 600px;
+    margin: 50px auto;
+    background-color: green;
+    border: 2px dashed black;
+}
+/*layout a 5 colonne e footer*/
+.container.black{
+    height: 400px;
+}
+.black {
+    background-color: black;
+}
+.col-large {
+    width: 34%;
+    background-color: salmon;
+    border: 2px dashed black;
+}
+.col-sm {
+    width: calc(33% / 2);
+    background-color: rgb(2, 151, 131);
+    border: 2px dashed white;
+}
+.row.five div {
+    padding: 170px 0;
+    margin-bottom: 30px;
+    flex-direction: row;
+    align-self: center;
+}
+main {
+    border-bottom: 4px solid lightgray;
+}
+footer {
+    border-bottom: 2px solid lightgray;
+}
+.container.f {
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+}
+.row.f {
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
+    justify-content: space-between;
+}
+[class^="col-f"] {
+    align-self: center;
+    height: 50%;
+    background-color: lightgray;
+    border: 2px dashed black;
+}
+[class^="content-f"] {
+    padding: 5px 10px;
+}
