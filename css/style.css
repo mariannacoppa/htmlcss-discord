@@ -24,7 +24,7 @@ body {
 /*intestazione*/
 .container.h {
     height: 60px;
-    background-color: #404EED;
+    background-color: rgb(37,94,233);
 }
 .row.h {
     width: 80%;
@@ -68,15 +68,17 @@ li {
     border-radius: 40px;
     padding: 15px;
 }
-
 /*layout singolo piccolo*/
 .container.sm {
-    background-color: rgb(1, 1, 155);
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
 }
 .col.sm {
     width: 45%;
-    height: 200px;
-    margin: 50px auto;
+    margin: auto;
     background-color: violet;
     border: 2px dashed black;
 }
