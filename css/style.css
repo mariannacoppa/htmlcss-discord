@@ -35,7 +35,6 @@ body {
 .col.h.medium {
     width: 60%;
     text-align: center;
-    
 }
 .col.h.right {
     text-align: right;
@@ -69,7 +68,7 @@ a {
 .content.h.left, .content.h.right {
     padding: 0px 10px;
 }
-a:not(li a) {
+a:not(li a, .language) {
     background-color: white;
     border-radius: 40px;
     padding: 15px;
@@ -157,6 +156,10 @@ h1.lateral {
     background-position: center;
     background-repeat: no-repeat;
 }
+.col-big.item4-big a, #registrati {
+    background-color: #648ae8;
+    color: white;
+}
 [class^="wave"] {
     width: 100%;
     filter: opacity(0.19);
@@ -165,32 +168,45 @@ h1.lateral {
     transform: rotate(180deg);
 }
 /*layout a 5 colonne e footer*/
-.container.black{
-    height: 400px;
+.col-large, .col-small {
+    height: 300px;
+    border-bottom: 2px solid rgb(37,94,233);
 }
-.black {
+.language {
+    text-decoration: none;
+    color: white;
+}
+.language span {
+    margin: 0 10px;
+}
+footer {
     background-color: black;
 }
 .col-large {
     width: 34%;
-    border: 2px dashed white;
 }
-.col-sm {
+.content-footer-large h4, .content-footer-small h5 {
+    color: rgb(37,94,233);
+}
+.content-footer-large h4, a{
+    margin-bottom: 15px;
+}
+.icons i, .content-footer-small a {
+    color: white;
+}
+.col-small {
     width: calc(33% / 2);
-    background-color: rgb(2, 151, 131);
-    border: 2px dashed white;
 }
-.row.five div {
-    padding: 170px 0;
-    margin-bottom: 30px;
-    flex-direction: row;
-    align-self: center;
+.content-footer-small {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
-main {
-    border-bottom: 4px solid lightgray;
+.content-footer-small li {
+    margin-top: 5px;
 }
-footer {
-    border-bottom: 2px solid lightgray;
+.language img {
+    width: 30px;
 }
 .container.f {
     height: 80px;
@@ -201,15 +217,12 @@ footer {
     height: 70%;
     margin-left: auto;
     margin-right: auto;
-    background-color: aquamarine;
     justify-content: space-between;
 }
-[class^="col-f"] {
+.col-fb-left, .col-fb-right {
     align-self: center;
     height: 50%;
-    background-color: lightgray;
-    border: 2px dashed black;
 }
-[class^="content-f"] {
+.content-fb-left, .content-fb-right {
     padding: 5px 10px;
 }
