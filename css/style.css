@@ -171,6 +171,7 @@ h1.lateral {
 .col-large, .col-small {
     height: 300px;
     border-bottom: 2px solid rgb(37,94,233);
+    margin-top: 20px;
 }
 .language {
     text-decoration: none;
@@ -193,6 +194,10 @@ footer {
 }
 .icons i, .content-footer-small a {
     color: white;
+    font-size: 10px;
+}
+.icons i {
+    margin: 20px 5px;
 }
 .col-small {
     width: calc(33% / 2);
