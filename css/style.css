@@ -35,7 +35,7 @@ body {
 .col.h.medium {
     width: 60%;
     text-align: center;
-    color: white;
+    
 }
 .col.h.right {
     text-align: right;
@@ -51,11 +51,17 @@ body {
     display: flex;
     justify-content: space-around;
 }
+.content.h.m a {
+    color: white;
+}
 li {
     list-style: none;
     display: inline-block;
     flex-direction: row;
     text-align: center;
+}
+a {
+    text-decoration: none;
 }
 .content.h {
     line-height: 58px;
@@ -114,17 +120,9 @@ p.sm {
 .col-70 {
     width: 70%;
 }
-.item1 {
-    background-image: url(../img/item1.svg);
-}
-.item2 {
-    background-image: url(../img/item2.svg);
-}
-.item3 {
-    background-image: url(../img/item3.svg);
-}
-.item4-big {
-    background-image: url(../img/item4-big.svg);
+
+.item4-big img {
+    height: 70%;
 }
 .col-30 {
     width: 30%;
@@ -139,14 +137,32 @@ h1.lateral {
     margin-bottom: 20%;
 }
 /*layout singolo grande*/
-.row.big {
+.container.big {
+    height: 700px;
+}
+.row-big {
     width: 100%;
 }
 .col-big {
     width: 70%;
     height: 600px;
     margin: 50px auto;
-    border: 2px dashed black;
+    text-align: center;
+}
+.col-big h3 {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-image: url(../img/stars.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+[class^="wave"] {
+    width: 100%;
+    filter: opacity(0.19);
+}
+.wave-rotate {
+    transform: rotate(180deg);
 }
 /*layout a 5 colonne e footer*/
 .container.black{
@@ -157,7 +173,7 @@ h1.lateral {
 }
 .col-large {
     width: 34%;
-    border: 2px dashed black;
+    border: 2px dashed white;
 }
 .col-sm {
     width: calc(33% / 2);
