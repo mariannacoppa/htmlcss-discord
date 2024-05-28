@@ -160,13 +160,13 @@ h1.lateral {
     background-color: #648ae8;
     color: white;
 }
-[class^="wave"] {
+/*[class^="wave"] {
     width: 100%;
     filter: opacity(0.19);
 }
 .wave-rotate {
     transform: rotate(180deg);
-}
+}*/
 /*layout a 5 colonne e footer*/
 .col-large, .col-small {
     height: 300px;
